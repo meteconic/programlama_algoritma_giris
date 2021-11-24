@@ -1,16 +1,16 @@
 import tkinter
 def hesap():
-    a=int(E1.get())
-    h=int(E2.get())
-    alan=a*h/2
+   m=int(E1.get())
+   Ma=int(E2.get())
+   n=m/Ma
 
-    etiket3.config(text=str(alan))
+   etiket3.config(text=str(n))
 root=tkinter.Tk()
-root.configure(background='purple')
-etiket1=tkinter.Label(root,text="yükseklik giriniz")
+root.configure(background='blue')
+etiket1=tkinter.Label(root,text="kütleyi giriniz")
 etiket1.grid(row=0,column=0,padx=110,pady=10)
 
-etiket2=tkinter.Label(root,text="taban uzunluk giriniz")
+etiket2=tkinter.Label(root,text="molekül kütlesini giriniz")
 etiket2.grid(row=1,column=0,padx=110,pady=10)
 
 etiket3=tkinter.Label(root,text="------")
@@ -24,6 +24,4 @@ E2.grid(row=1,column=1,padx=110,pady=3)
 
 button1=tkinter.Button(root,text="hesapla",width=20,command=hesap)
 button1.grid(padx=110,pady=70)
-root.mainloop() 
-5                       
-    
+root.mainloop()                      
